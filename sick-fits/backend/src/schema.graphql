@@ -1,0 +1,20 @@
+type Item {
+  id: ID! @unique
+  title: String!
+  description: String!
+  image: String
+  largeImage: String
+  price: Int!
+  createAt: DateTime!
+  updatedAt: DateTime!
+  # user: User!
+}
+# chapter 14 09:34
+
+type Mutation {
+    createItem(title: String, description: String, Price: Int, image: String, largeImage: String): Item!
+}
+
+type Query {
+    
+}
